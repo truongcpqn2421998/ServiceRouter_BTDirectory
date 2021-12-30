@@ -1,0 +1,11 @@
+<p>Directory</p>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Word</th>
+  </tr>
+  <tr *ngFor="let w of words">
+    <td>{{w.id}}</td>
+    <td><a routerLink="word/{{w.id}}">{{w.word}}</a></td>
+  </tr>
+</table>
